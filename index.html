@@ -6,7 +6,56 @@
     <title>Memory Booth - Vintage Photobooth</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="styles.css">
+   <style>
+         body {
+            background-color: #f5f5dc; /* beige */
+            font-family: 'Raleway', sans-serif;
+            color: #333;
+        }
+        .header-font {
+            font-family: 'Playfair Display', serif;
+        }
+        .vintage-btn {
+            background-color: #d8a7b1; /* pink */
+            border: 2px solid #8c7b75; /* brownish-grey */
+            box-shadow: 3px 3px 0px #8c7b75;
+        }
+        .vintage-btn:hover {
+            background-color: #e0c0c8;
+            transform: translate(1px, 1px);
+            box-shadow: 2px 2px 0px #8c7b75;
+        }
+        .vintage-btn:active {
+            transform: translate(3px, 3px);
+            box-shadow: none;
+        }
+        .photo-frame {
+            border: 8px solid #d4c1b3;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+        .filter-option {
+            border: 2px solid #ccc5bd;
+        }
+        .filter-option.selected {
+            border: 2px solid #8c7b75;
+            background-color: #e0c0c8;
+            box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+        }
+        .camera-viewfinder {
+            border: 2px dashed #8c7b75;
+        }
+        #video {
+            transform: scaleX(-1);
+        }
+        .progress-bar {
+            height: 8px;
+            background-color: #e0c0c8;
+        }
+        .progress-fill {
+            height: 100%;
+            background-color: #8c7b75;
+        }
+   </style>
 </head>
 <body class="min-h-screen flex flex-col items-center py-8 px-4">
     <header class="text-center mb-8">
