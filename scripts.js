@@ -1,5 +1,4 @@
-
-        // DOM Elements
+ // DOM Elements
         const video = document.getElementById('video');
         const canvas = document.getElementById('canvas');
         const placeholder = document.getElementById('placeholder');
@@ -272,7 +271,7 @@
                 case 'sepia':
                     return 'sepia(80%) contrast(110%) brightness(90%)';
                 case 'grainy':
-                    return 'contrast(100%) brightness(80%) saturate(120%)';
+                    return 'contrast(120%) brightness(90%) saturate(120%)';
                 default:
                     return 'none'; // Color
             }
@@ -305,4 +304,3 @@
         
         // Initialize app when page loads
         window.addEventListener('DOMContentLoaded', init);
-  
